@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            #bussinessman{
+                height: 100px;
+                width: 100px;
+                float: right;
+            }
+            #bussinessman1{
+                height: 100px;
+                width: 100px;
+                float: left;
+            }
+            .centername{
+                font-family: 'Caveat', cursive;
+                font-family: 'Oswald', sans-serif;
+                font-size: 30px;
+                text-align: center;
+            }
+            .color{
+                color: rgb(75, 216, 75);
+            }
+            .color2{
+                color: rgb(255, 34, 119);
+            }
+            .godot{
+                height: 250px;
+                width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                border: 20px solid rgb(67, 202, 202);
+            }
+            body{
+                background-color: darkslategrey;
+            }
+            .colorwhitetext{
+                color: white;
+            }
+            .paragraphelement{
+                color: white;
+                text-align: center;
+                font-family: 'Caveat', cursive;
+                font-family: 'Oswald', sans-serif;
+                font-size: 20px;
+            }
+            .paragraphelement1{
+                color: white;
+                text-align: center;
+                font-family: 'Caveat', cursive;
+                font-family: 'Oswald', sans-serif;
+                font-size: 25px;
+            }
+            .paragraphelement2{
+                color: white;
+                text-align: center;
+                font-family: 'Caveat', cursive;
+                font-family: 'Oswald', sans-serif;
+                font-size: 36px;
+            }
+            .gridcontainer{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 100px 160px 300px 200px 90px;
+                gap: 25px;
+            }
+            .grid-column{
+                grid-column: span 3;
+                background-color: darkslategrey;
+                display: none;
+            }
+            .card {
+                background-color: darkslategrey;
+            }
+            .card1 {
+                background-color: darkslategrey;
+            }
+            #card1{
+                background-color: darkslategrey;
+            }
+            #ptextabc{
+                grid-column: span 3;
+                background-color: darkslategrey;
+            }
+            #image1{
+                grid-column: span 3;
+                background-color: darkslategrey;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                clear: both;
+            }
+            #image1img{
+                height: 300px;
+                width: 500px;
+                border: 5px solid rgb(44, 43, 43);
+                float:left;
+            }
+            #float1{
+                background-color: darkslategrey;
+                grid-column: span 3;
+            }
+            #float2{
+                height: 300px;
+                width: 500px;
+                float:left;
+            }
+            #float3{
+                height: 300px;
+                width: 500px;
+                float:right;
+            }
+            .titlephoto{
+                color: white;
+                font-size: 35px;
+                font-family: 'Caveat', cursive;
+                font-family: 'Oswald', sans-serif;
+                text-align: center;
+            }
+            .titlephoto2{
+                color: white;
+                font-size: 25px;
+                font-family: 'Caveat', cursive;
+                font-family: 'Oswald', sans-serif;
+                text-align: center;
+            }
+            .godotimageexpa{
+                grid-column: span 3;
+                background-color: darkslategrey;
+            }
+            footer{
+                position: relative;
+                top: 5px;
+                clear: left;
+            }
+            hr{
+                clear:left;
+            }
+            @media (max-width: 752px) and (min-width: 319px){
+                .card{
+                    display: none;
+                }
+                #card1{
+                    grid-column: span 3
+                }
+                .gridcontainer{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 100px 265px 500px 450px 90px;
+                    gap: 25px;
+                }
+                #float2{
+                    height: auto;
+                    width: 100%;
+                }
+                #float3{
+                    height: auto;
+                    width: 100%;
+                    clear: right;
+                }
+                #image1img{
+                    height: auto;
+                    width: 100%;
+                    clear: left;
+                }
+                .centername{
+                    font-size: 35px;
+                    z-index: 1;
+                }
+                #ptextabc{
+                    z-index: -1;
+                }
+                .paragraphelement1{
+                    font-size:25px;
+                }
+                .paragraphelement2{
+                    font-size: 30px;
+                }
+            }
+            @media (max-width: 1200px) and (min-width: 753px){
+                body{
+                    background-color: darkslategrey;
+                }
+            }
+            @media (max-width: 1600px) and (min-width: 1201px){
+                .paragraphelement1{
+                    font-size: 30px;
+                }
+                .paragraphelement{
+                    font-size: 30px;
+                }
+                .centername{
+                    font-size: 35px;
+                    z-index: 1;
+                }
+                #bussinessman{
+                    height: 130px;
+                    width: 130px;
+                    float: right;
+                    z-index: 1;
+                }
+                #bussinessman1{
+                    height: 130px;
+                    width: 130px;
+                    float: left;
+                    z-index: 1;
+                }
+                #ptextabc{
+                    z-index: -1;
+                }
+                #float2{
+                    height: 400px;
+                    width: 600px;
+                    float:left;
+                }
+                #float3{
+                    height: 400px;
+                    width: 600px;
+                    float:right;
+                }
+                #image1img{
+                    height: 400px;
+                    width: 600px;
+                }
+                .gridcontainer{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 100px 240px 400px 300px 120px;
+                    gap: 25px;
+                }
+                .paragraphelement2{
+                    font-size: 40px;
+                    position: relative;
+                    top: 110px;
+                }
+                
+            }
+            @media (min-width: 1601px){
+                *{
+                    font-size: 60px;
+                }
+                .gridcontainer{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 200px 240px 400px 300px 120px;
+                    gap: 25px;
+                }
+                .paragraphelement1{
+                    font-size: 40px;
+                }
+                .paragraphelement{
+                    font-size: 40px;
+                }
+                .paragraphelement2{
+                    font-size: 60px;
+                    position: relative;
+                    top: 25px;
+                }
+                #bussinessman{
+                    height: 260px;
+                    width: 260px;
+                    float: right;
+                    z-index: 1;
+                }
+                #bussinessman1{
+                    height: 260px;
+                    width: 260px;
+                    float: left;
+                    z-index: 1;
+                }
+                #ptextabc{
+                    z-index: -1;
+                }
+                #float2{
+                    height: 500px;
+                    width: 700px;
+                }
+                #float3{
+                    height: 500px;
+                    width: 700px;
+                    clear: right;
+                }
+                #image1img{
+                    height: 500px;
+                    width: 700px;
+                    clear: left;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gridcontainer">
+            <div class="card">
+                <img src="./business-man.png" id="bussinessman"/>
+            </div>
+            <div id="card1">
+                <h1 class="centername"><span class="color"><u>Video</u></span><u class="colorwhitetext">Game</u></h1>
+                <h1 class="centername"><span class="color2"><u>Crea</u></span><u class="colorwhitetext">tion</u></h1>
+            </div>
+            <div class="card">
+                <img src="./business-man.png" id="bussinessman1"/>
+            </div>
+            <div id="ptextabc">
+                <h2 class="titlephoto"><u>Our Company Goal</u></h2>
+                <p class="paragraphelement1">We create custom video games that our clients suggest and collaberate on the development of video games.</p>
+            </div>
+            <div class="card1" id="float1">
+                <img src="./tiger.jpg" id="float2" />
+                <h2 class="titlephoto"><u>3D Game Development</u></h2>
+                <p class="paragraphelement">Our company uses Unreal Engine for 3D game development and blender for making our 3D characters.</p>
+            </div>
+            <div class="card1" id="float1">
+                <img src="./2dgamedisplay.png" id="float3" />
+                <h2 class="titlephoto"><u>2D Game Development</u></h2>
+                <p class="paragraphelement">Our company uses Godot Game Engine for 2D game development and Krita and Photoshop for making our 2D sprites, game objects and animations.</p>
+            </div>
+        </div>
+        <div id="image1">
+            <img src="./godotcreationimage.jpg" id="image1img" /> 
+        </div>
+        <div class="godotimageexpa">
+            <p class="paragraphelement2">With The Help of Game Development We Can Make Your Dream Game a Reality</p>
+        </div>
+
+        <footer>
+            <hr/>
+            <h2 class="titlephoto2">
+                @Copyright 2024 made by Video Game Creation Corporation
+            </h2>
+        </footer>
+    </body>
+</html>
